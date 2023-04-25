@@ -1,0 +1,49 @@
+/* general styling */
+
+input,
+textarea,
+button,
+select,
+a,
+img {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.div-container{
+  width: calc(100% - 40px);
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .div-container{
+    width: calc(100% - 150px);
+  } 
+}
+
+hr {
+  background-color: rgb(209 213 219);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navigation */
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: 50;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.overlays {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);/* Change the opacity to adjust the darkness of the overlay */
+  z-index: 10;/* Make sure the overlay is behind the navigation */
+}
