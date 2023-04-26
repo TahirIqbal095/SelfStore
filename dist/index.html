@@ -10,163 +10,99 @@
     <link rel="stylesheet" href="style.css">
     <!-- Tailwind css -->
     <link rel="stylesheet" href="tailwind.css">
-     <!-- font awesome -->
-     <script src="https://kit.fontawesome.com/fa432fc678.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/fa432fc678.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body id="body" class="text-gray-700 bg-gray-100">
-
-    <div class="background-gradient"></div>
-
-    <nav>
-        <div id="sidebar">
-
-            <div class="sidebar-top | relative text-gray-100 flex items-center gap-1 p-2">
-                <a href="#" class="flex items-center justify-center rounded-full w-12 h-12">
-                    <img class="w-10 h-10 rounded-full" src="images/user.svg" alt="img">
-                </a>
-                <a href="#" class="font-medium text-lg">Sign in</a>
-
-                <button id="close" class="ml-auto border-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" fill="#f3f4f6"
-                        viewBox="0 96 960 960">
-                        <path
-                            d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="mt-4 pl-2 overflow-y-scroll">
-                <div class="space-y-4">
-                    <h3 class="font-semibold text-xl">Trending</h3>
-                    <ul class="sidebar-items | mt-2 text-lg space-y-4">
-                        <a href="#">
-                            <li class="p-2 hover:bg-[rgba(76,29,149,0.3)] duration-200 rounded-sm">Best Sellers</li>
-                        </a>
-                        <a href="#">
-                            <li class="p-2 hover:bg-[rgba(76,29,149,0.3)] duration-200 rounded-sm">New Releases</li>
-                        </a>
-                        <li>
-                            <hr>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="sidebar-items | mt-4 space-y-4">
-                    <h3 class="font-semibold text-xl">Help and Setting</h3>
-                    <ul class="mt-2 text-lg space-y-4">
-                        <a href="#">
-                            <li class="p-2 hover:bg-[rgba(76,29,149,0.3)] duration-200 rounded-sm">Your Account</li>
-                        </a>
-                        <a href="#">
-                            <li class="p-2 hover:bg-[rgba(76,29,149,0.3)] duration-200 rounded-sm">Custommer Service
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="p-2 hover:bg-[rgba(76,29,149,0.3)] duration-200 rounded-sm">About us</li>
-                        </a>
-                        <a href="#">
-                            <li class="p-2 hover:bg-[rgba(76,29,149,0.3)] duration-200 rounded-sm">Sign In</li>
-                        </a>
-                        <li>
-                            <hr>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="mt-4 flex gap-4">
-                    <div class="flex justify-center w-12 h-12 border-2 border-[rgba(76,29,149,0.3)] rounded-full">
-                        <a href="#" class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" fill="#374151"
-                                viewBox="0 0 512 512">
-                                <path
-                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="flex justify-center w-12 h-12 border-2 border-[rgba(76,29,149,0.3)] rounded-full">
-                        <a href="#" class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" fill="#374151"
-                                viewBox="0 0 448 512">
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="flex justify-center w-12 h-12 border-2 border-[rgba(76,29,149,0.3)] rounded-full">
-                        <a href="#" class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" fill="#374151"
-                                viewBox="0 0 512 512">
-                                <path
-                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="overlay" class="overlays | hidden"></div>
-    </nav>
+<body id="body" class="text-gray-700">
 
     <main>
         <section>
-            <div class="div-container | relative rounded-lg mt-4 bg-gray-100 pt-4 sm:px-24 px-10">
+            <div class="background-gradient"></div>
+            <div class="relative mt-4 pt-4 sm:px-24 px-10">
 
                 <div class="flex items-center justify-between">
                     <h1>SelfStore</h1>
 
-                    <div class="flex items-center gap-8">
-                        <ul class="flex gap-8">
-                            <li class="hidden sm:block"><a href="#">Best Seller</a></li>
-                            <li><a href="#" class="flex items-center">Cart
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="26" fill="#374151"
-                                        viewBox="0 96 960 960">
-                                        <path
-                                            d="M286.788 975Q257 975 236 953.788q-21-21.213-21-51Q215 873 236.212 852q21.213-21 51-21Q317 831 338 852.212q21 21.213 21 51Q359 933 337.788 954q-21.213 21-51 21Zm400 0Q657 975 636 953.788q-21-21.213-21-51Q615 873 636.212 852q21.213-21 51-21Q717 831 738 852.212q21 21.213 21 51Q759 933 737.788 954q-21.213 21-51 21ZM235 315l110 228h288l125-228H235Zm-30-60h589.074q22.964 0 34.945 21Q841 297 829 318L694 561q-11 19-28.559 30.5Q647.881 603 627 603H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z" />
-                                    </svg>
-                                </a></li>
-                        </ul>
-
-                        <button id="hamburger-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="#374151" height="30" viewBox="0 96 960 960"
-                                width="26">
-                                <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                            </svg>
-                        </button>
-                    </div>
+                    <ul class="flex gap-8">
+                        <li class="hidden sm:block"><a href="#">New Releases</a></li>
+                        <li><a href="#" class="flex items-center">Cart
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="26" fill="#374151"
+                                    viewBox="0 96 960 960">
+                                    <path
+                                        d="M286.788 975Q257 975 236 953.788q-21-21.213-21-51Q215 873 236.212 852q21.213-21 51-21Q317 831 338 852.212q21 21.213 21 51Q359 933 337.788 954q-21.213 21-51 21Zm400 0Q657 975 636 953.788q-21-21.213-21-51Q615 873 636.212 852q21.213-21 51-21Q717 831 738 852.212q21 21.213 21 51Q759 933 737.788 954q-21.213 21-51 21ZM235 315l110 228h288l125-228H235Zm-30-60h589.074q22.964 0 34.945 21Q841 297 829 318L694 561q-11 19-28.559 30.5Q647.881 603 627 603H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="lg:mt-24 sm:mt-20 mt-16">
+                <div class="lg:mt-24 mt-20">
                     <h1 class="sm:text-4xl text-3xl font-semibold sm:leading-[170%] leading-[160%]">
                         <span class="block">Find Your Path to</span>
                         <span class="bg-text | relative">
-                            <span class="hero-text | text-[#6553EB]">Personal Growth</span>
+                            <span class="relative text-[#6553EB]">Personal Growth</span>
                         </span>
                         <span class="block sm:inline-block">
                             and
                             <span class="bg-text | relative">
-                                <span class="hero-text | text-[#6553EB]">Success</span>
+                                <span class="relative text-[#6553EB]">Success</span>
                             </span>
                         </span>
                     </h1>
 
-                    <p class="max-w-md text-gray-500 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at quis eum repellat magni odio id nulla, saepe officiis, delectus labore
+                    <p class="max-w-md text-gray-400 mt-8">
+                        Unlock the power of your mind with our self-help books. learn proven strategies to boost your
+                        confidence, productivity, and happiness!
                     </p>
 
                     <div class="inline-block mt-6 pb-1">
-                        <a href="#" class="hvr-icon-down | flex justify-center items-center bg-[#6553EB] text-gray-100 text-lg px-6 py-1 rounded-2xl shadow-xl">
-                            Order now <i class="fa fa-arrow-circle-o-down hvr-icon | ml-2"></i>
+                        <a href="#"
+                            class="hvr-icon-down btn | flex justify-center items-center bg-[#6553EB] text-gray-100 text-lg px-6 py-2 rounded-full shadow-xl active:scale-105 duration-200">
+                            Order now
+                            <svg xmlns="http://www.w3.org/2000/svg" class="hvr-icon | ml-2" height="24"
+                                viewBox="0 96 960 960" fill="#f3f4f6" width="24">
+                                <path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z" />
+                            </svg>
                         </a>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <section class="mt-16 pt-4 sm:px-24 px-10">
+            <div class="sm:flex sm:space-y-0 space-y-8 gap-8 items-center">
+                <div>
+                    <p class="text-green-600 text-3xl font-semibold">
+                        <span class="bg-text-green | relative">
+                            <span class="relative">
+                                100+
+                            </span>
+                        </span>
+                    </p>
+                    <p class="text-gray-400 w-[24ch] mt-3">
+                        Collection of self-help books that you can't miss
+                    </p>
+                </div>
 
+                <div>
+                    <p class="text-green-600 text-3xl font-semibold">
+                        <span class="bg-text-green | relative">
+                            <span class="relative">
+                                50+
+                            </span>
+                        </span>
+                    </p>
+                    <p class="text-gray-400 w-[24ch] mt-3">
+                        Different authors
+                    </p>
+                </div>
+
+                <hr class="bg-gray-500">
             </div>
         </section>
     </main>

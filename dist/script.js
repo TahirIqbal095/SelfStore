@@ -5,11 +5,13 @@ const closeEl = document.getElementById("close")
 const navbarEl = document.getElementById("navbar")
 
 hamburgerEl.addEventListener('click', ()=>{
-    sidebarEl.style.width = "300px"
+    sidebarEl.style.width = "250px"
+    sidebarEl.style.height = "100%"
     overlayEl.classList.toggle("hidden")
 })
 
 closeEl.addEventListener('click', ()=>{
     sidebarEl.style.width = "0px"
+    sidebarEl.style.height = "0px"
     overlayEl.classList.toggle("hidden")
 })
