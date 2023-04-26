@@ -66,15 +66,6 @@ main {
   background-color: rgba(76, 29, 149, 0.7);
 }
 
-.overlays {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  /* Change the opacity to adjust the darkness of the overlay */
-  z-index: 10;
-  /* Make sure the overlay is behind the navigation */
-}
-
 /* background text */
 
 .bg-text::before {
@@ -88,14 +79,14 @@ main {
   transform: rotate(-0.5deg);
 }
 
-.bg-text-green::before {
+.bg-text-red::before {
   content: '';
   position: absolute;
-  background-color: rgba(22,163,74,0.2);
+  background-color: rgba(239, 68, 68, 0.2);
   top: 0;
   bottom: 0;
   height: 100%;
-  width: 95%;
+  width: 100%;
   transform: rotate(-0.5deg);
 }
 
@@ -161,4 +152,61 @@ main {
   animation-duration: 0.75s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+}
+
+/* Icon Forward */
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+/* shoping Cards */
+
+.cards-container {
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.card {
+  background: #FFFFFF;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #F3F4F6 100%);
+  padding: 8px;
+}
+
+.img-container {
+  width: 12rem;
+  height: 14rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  font-size: larger;
+  margin-top: 6px;
+  font-weight: bold;
 }
